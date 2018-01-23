@@ -1,0 +1,222 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[10pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{black}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+\usepackage[bottom]{footmisc}
+%\addtolength{\skip\footins}{10pt}
+\usepackage[super]{nth}
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+
+
+% personal data
+\name{Ahmed}{Hussein Abdelhadi}
+%\title{Resumé title}                               % optional, remove / comment the line if not wanted
+\address{16 Ahmed ElSamman St., Nasr City}{11762 Cairo}{Egypt}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{+20 1112805200}                   % optional, remove / comment the line if not wanted
+%\phone[fixed]{+20 22751934}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{ahmed.h.abdelhadi@gmail.com}                                  % optional, remove / comment the line if not wanted
+%\homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+\photo[64pt][0.4pt]{photo}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+
+
+%\section{Bachelor Thesis}
+%\cvitem{Title}{\emph{"Vibration finite element analysis and control of Coriolis flow meters (CFM)"}}
+%\cvitem{Institute}{Institute of Mechanics at Universit\"{a}t Bundeswehr in Munich}
+%\cvitem{Supervisor}{Dr.-Ing. Kheirollah Sepahvand }
+%\cvitem{description}{Short thesis abstract}
+
+
+\section{Experience}
+
+\vspace{6pt}
+
+\cventry{Jul 2015--Present}{Embedded Software Engineer, Radar Systems, Comfort and Driving Assistance}{Valeo}{Cairo, Egypt}{}{
+- Software developer, integrator and acting technical leader for R\&D standardization Radar project. \newline
+- Code refactoring, maintenance and bug fixing for both DSP and Host Radar software modules. \newline
+- Configuring AUTOSAR modules for Host Application. \newline
+- Module testing using VectorCAST. \newline
+- Debugging BlackFin DSP using VisualDSP++. \newline
+- Debugging S12XE and PICTUS MPC using WinIdea. \newline
+- Using CANoe and CAPL for simulating and debugging. \newline
+- Documenting High-Level Design and Low-Level Design documents. \newline 
+- Integration and release of software releases using configuration management tools (Dimensions). \newline
+- Designing and running release (regression) tests measuring CPU load, stack consumption and jitters of periodic tasks.\newline
+- Ownership of CAN specifications and maintaining the DBC. \newline
+- QAC using MISRA-C and Valeo Standards.\newline
+- Mentoring and supporting newcomers.\newline
+\vspace{3pt}}
+
+\cventry{Jan 2015--May 2015}{Application Manager}{OGTech Technology Solutions}{Giza, Egypt}{}{\vspace{3pt}}
+
+\vspace{6pt}
+
+%\cventry{July 2012}{Mechanical Engineer Trainee}{Gulf Of Suez Petroleum Co. (GUPCO)}{Red Sea, Egypt}{}{\vspace{3pt}}
+
+\vspace{6pt}
+
+\section{Education}
+
+\vspace{5pt}
+
+%\subsection{Academic Qualifications}
+
+
+
+
+\cventry{2009--2014}{Bachelor of Science in Engineering and Material Science }{German University in Cairo}{Cairo, Egypt}{}{\textbf{Major:} Mechatronics Engineering \newline \textbf{GPA:} 1.67 \textit(Very Good with Honors)}
+
+\begin{itemize}
+\item[--]{\cventry{Mar 2013 -- Aug 2013}{Bachelor Thesis}{Institute of Mechanics at Universität der Bundeswehr München}{Munich, Germany}{}{\textbf{Title:} Vibration finite element analysis and control of Coriolis flow meters (CFM) \newline \textbf{Grade:} A}} 
+\vspace{3 pt}
+\item[--]{\cventry{Oct 2012 -- Jan 2013}{Study
+Abroad for Winter Semester 2012}{GUC Berlin Campus}{Berlin, Germany}{}{}}
+
+\end{itemize}
+
+\vspace{8 pt}
+
+\cventry{2007--2009}{The Egyptian General Secondary Certificate of Education}{AB Language School}{Cairo, Egypt}{}{\textbf{Grade:} 98.17\% }  % arguments 3 to 6 can be left empty
+
+%\item{\cventry{2002--2009}{11 GCSEs}{Southlands High School}{Chorley}{\textit{A* to B Including Maths and English}}{}}
+
+
+
+
+
+\newpage
+
+
+
+\section{Technical Skills}
+
+\cvitem{Programming Languages}{C, Java, Python}
+\cvitem{Automotive Tools}{Vector CANoe, DOORS, Enterprise Architect, VectorCast}
+\cvitem{Numerical Computing Environments}{MATLAB, ANSYS, LabVIEW}
+
+%\cvitem{Graphics Editing Software}{Adobe Photoshop}
+
+
+%\cvdoubleitem{category 3}{XXX, YYY, ZZZ}{category 6}{XXX, YYY, ZZZ}
+
+%\section{Interests}
+%\cvitem{hobby 1}{Description}
+%\cvitem{hobby 2}{Description}
+%\cvitem{hobby 3}{Description}
+\section{Language}
+\cvitemwithcomment{Arabic}{Native language}{}
+\cvitemwithcomment{English}{ILR Level 4 – Full professional proficiency}{TOEFL iBT Test Total Score: 103}
+\cvitemwithcomment{German}{ILR Level 2 – Limited working proficiency}{}
+
+
+\section{Extra-Curricular Activities}
+%\cvlistitem{GUC Orientation '13 ushering team member }
+%\cvlistitem{GUC Graduation Ceremony '13 ushering team member }
+%\cvlistitem{GUC SU elections '14 ushering team member }
+%\cvlistitem{Bdaya-GUC Care '14 member }
+%\cvlistitem{AYB-GYC Internal Public Relations '14 member}
+
+\cventry{Jun 2015 -- Present}{Alumni}{AYB-GUC \vspace{0.1 cm}}{}{}{}
+\vspace*{-0.4 cm}
+\cventry{Sep 2014 –- May 2015}{Research and Development Team Leader (Alumni)}{}{}{}{}
+\vspace*{-0.4 cm}
+\cventry{Nov 2013 -– Aug 2014}{Internal Public Relations Team Member}{}{}{}{}
+\vspace{6 pt}
+\cventry{Sep 2014 -- Present}{Alumni}{Bdaya-GUC \vspace{0.1 cm}}{}{}{}
+\vspace*{-0.4 cm}
+\cventry{Nov 2013 -– Aug 2014}{Care Committee Member}{}{}{}{}
+\vspace{6 pt}
+
+
+
+\begin{itemize}
+\item[--]{Ushered in various events including: \textbf{GUC Employment Fair ’14}, \textbf{Student Union Elections ’14}, \textbf{GUC Graduation Ceremony ’13} and \textbf{GUC Orientation ’13}. }
+
+\vspace{6 pt}
+
+\item[--]{\textbf{Bdaya-GUC '14} Best Academic Subcommittee Member }
+
+\vspace{6 pt}
+\item[--]{ \textbf{AYB-GUC '16} Best Alumni }
+\end{itemize}
+
+%\section{Miscellaneous}
+%\cvlistitem{Exempted from Military Service}
+
+%\section{Extra 2}
+%\cvlistdoubleitem{Item 1}{Item 4}
+%\cvlistdoubleitem{Item 2}{Item 5\cite{book1}}
+%\cvlistdoubleitem{Item 3}{Item 6. Like item 3 in the single column list before, this item is particularly long to wrap over several lines.}
+
+%\section{References}
+%\cventry{}{Dean of The Faculty of Engineering at the German University in Cairo}{Prof. Dr. Yasser Hegazy}{}{}%{\textbf{Telephone:}
+%+20 2 2758 9990
+%\\ \textbf{ Email:} yasser.higazi@guc.edu.eg}
+%\cventry{}{Professor of Technical Dynamic at Universitat Bundeswehr in Munich}{Dr.-Ing. Kheirollah Sepahvand}{}{}%{\textbf{Telephone:} + 49 (0) 89 6004 4110\\
+%\textbf{ Email:} sepahvand@unibw.de}
+
+%\begin{cvcolumns}
+%  \cvcolumn{Category 1}{\begin{itemize}\item Person 1\item Person 2\item Person 3\end{itemize}}
+%  \cvcolumn{Category 2}{Amongst others:\begin{itemize}\item Person 1, and\item Person 2\end{itemize}(more upon request)}
+%  \cvcolumn[0.5]{All the rest \& some more}{\textit{That} person, and \textbf{those} also (all available upon request).}
+%\end{cvcolumns}
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+\nocite{*}
+\bibliographystyle{plain}
+%\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+\end{document}
+
+
+%% end of file `template.tex'.
